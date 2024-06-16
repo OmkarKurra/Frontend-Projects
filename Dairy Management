@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title> Milk Center</title>
+     <style>
+        .nav{
+            text-align:center;
+            background-color:rgb(109, 11, 11);
+            position:fixed;
+            z-index:1000;
+            top:0;
+            width:100%;
+            color:white;
+        }
+        .nav1 {
+                background-color: rgb(15, 4, 4);
+                overflow:hidden;
+                color:white;
+         }
+            .nav1 a{
+                float:right;
+                color: rgb(168, 6, 60);
+                padding:14px 14px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav h1{
+                text-align: center;
+                color:black;
+                padding:14px 14px;
+                margin:0px;
+                color:white;
+               
+            }
+            .nav1 a:hover{
+                background-color: rgb(38, 138, 40);
+                color:rgb(241, 250, 116)
+            }
+            .nav1 a:active{
+                background-color: rgb(44, 83, 46);
+                color: rgb(57, 38, 75);
+
+            }
+            #products{
+                display:flex;
+                flex-direction: row;
+                background-color:rgb(20, 21, 18);
+                
+                padding:20px 100px 20px 100px;
+                margin:100px;
+                margin-top:200px;
+                margin-bottom:20px;
+            }
+            #products img{
+                
+                width:100px;
+                height:100px;
+                
+                
+            }
+            .img-bg{
+                background-image: url("https://as1.ftcdn.net/v2/jpg/03/69/25/90/1000_F_369259092_I80CyfbNryKWOwDmA94IEdWLRIXXBxnK.jpg");
+                             
+                filter:blur(8px);
+                position:absolute;
+                left:0;
+                rigth:0;
+                height:100%;
+                width:100%;
+                z-index:-1;
+            }
+            .product1,.product2,.product3,.product4{
+                background-color: bisque;
+                border-radius:30px;
+                margin-top:30px;
+               
+                
+                
+            }
+            .product1,.product2,.product3,.product4 , img{
+            margin-left: 20px;
+            margin-top:0px;
+            margin-bottom:0px;
+          }
+         .product1, .product2 ,.product3,.product4 ,h3 {
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+          
+         .product1, .product2,.product3,.product4 , p{
+            text-align: center;
+            color: black;
+            padding:6px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+          .product1:hover,.product2:hover,.product3:hover,.product4:hover{
+                animation-name: move;
+                animation-duration: 3s;
+            }
+            @keyframes move {
+                0%{
+                    transform: translate(-0.05em, -0.05em);
+                    box-shadow: 0.15em 0.15em;
+                }
+                100%{
+                    transform: translate(0.05em, 0.05em);
+                    box-shadow: 0.05em 0.05em;
+                }
+                
+            }
+            #about{
+                margin: 100px;
+                background-color: rgb(14, 15, 13);
+                margin-bottom: 0px;
+                margin-top:5px;
+                box-shadow: 2px 2px 2px 2px rgb(26, 31, 26);
+            }
+            #about h3,p{
+                padding:10px;
+                z-index:1;
+                padding-top:0px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top:0px;
+                color:white;
+            }
+            #contact{
+                background-color: rgb(21, 23, 19);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: rgb(16, 12, 12);
+                margin:100px;
+                margin-top:10px;
+                box-shadow: 2px 2px 2px 2px rgb(11, 12, 11);
+            }
+            #contact h3,p{
+                padding:10px;
+                z-index:1;
+                padding-top:0px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top:0px;
+                color:white;
+            }
+
+     </style>
+    </head>
+    <body>
+        <div class ="nav">
+        <h1>OmkarMilkCenter</h1>
+        
+        <div class="nav1">
+            <marquee direction="right" scrollamount="10"> <h1>Welcome EveryOne</h1></marquee>
+            <a  href="#home">Home</a>
+  <a href="#products">Products</a>
+  
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+        </div>
+        </div>
+        <div class="img-bg"></div>
+        <div id="home"></div>
+        <div id="products">
+            <div class="product1">
+                <h3>Milk</h3>
+                <img src="https://5.imimg.com/data5/UA/IO/MY-39997634/milk-250x250.jpg">
+                <p>Natural fresh milk.</p>
+                <p>1lit price:RS:80/-</p>
+                
+            </div>
+            <div class="product2">
+                <h3>Gee</h3>
+                <img src="https://m.media-amazon.com/images/I/41zrE1k9dxL.jpg">
+                <p>Freshly made Gee  </p>
+                <p>250grs price:RS:400</p>
+            </div>
+            <div class="product3">
+                <h3>ButterMilk</h3>
+                <img src="https://www.cookwithmanali.com/masala-chaas/masala-chaas-recipe/">
+                <p>Freshly made ButterMilk</p>
+                <p>1pc price:RS:20</p>
+            </div>
+            <div class="product4">
+                <h3>Curd</h3>
+                <img src="https://www.ruchiskitchen.com/wp-content/uploads/2014/06/How-to-set-curd-in-winters-13.jpg.webp">
+                <p>Freshly made Curd</p>
+                <p>1kg price:RS:70</p>
+            </div>
+        </div>
+        <div id="about">
+            <h3>AboutUs</h3>
+            <p>We will provide very good qulaity products. Every product has good taste.
+                We are the best in the market lot of people are competitors for us but no one can match our standards.
+                Just come and try once then tell take a decision. We will make justice for every rupee.
+            </p>
+        </div>
+        <div id="contact">
+            <h3>ContactUs</h3>
+            <p>Have any feedback? We'd love to hear from you! Reach out to us at contact@omkarmilkcenter.com or follow us on our social media channels to stay connected.</p>
+        </div>
+        
+     
+    </body>
+</html>
