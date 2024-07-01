@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>EVEN NUMBER</title>
+      <style>
+        #body
+        {
+            background-image: url("https://img.freepik.com/free-vector/mathematical-geometric-background-vector-gradient-blue-education-remix_53876-114100.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1719187200&semt=ais_user");
+            height:100vh;
+            background-size: cover;
+        }
+        #total-body
+        {
+            /*background-color:#d0bdf4;*/
+            text-align: center;
+            padding:10px;
+            margin-left:30%;
+            margin-right: 30%;
+            
+            border-radius: 40px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 0);
+            border:2px solid black;
+            backdrop-filter: blur(3px);
+            
+
+        }
+        .main-text{
+            margin:150px;
+        }
+        #heading
+        {
+            text-align:center;
+            color: white;
+            border-color: rgb(137, 137, 222);
+            font-family: sans-serif;
+        }
+        .card-para{
+            color:white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #numb
+        {
+            color:white;
+            font-family:sans-serif;
+            font-weight: bold;
+        }
+        .input-question{
+            background-color: rgb(18, 55, 83);
+            color:white;
+            border: 0px;
+            border-radius: 10px;
+            height:30px;
+        }
+        .button-check{
+            background-color: rgb(104, 104, 236);
+            color:white;
+            border-radius: 8px;
+            border:0px;
+            height:30px;
+        }
+      </style>
+    </head>
+    <body id="body">
+        <h1 id="heading">Check! The Number Is EvenNumber Or OddNumber</h1>
+        <div id="total-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12>
+                <div class="main-text">
+                
+                    <p class="card-para">Enter the number:</p>
+                    <input type="text" id="input" palceholder="Enter the num" class="input-question">
+                    <script>
+                        function myFunc()
+                        {
+                            let inputElement=document.getElementById("input");
+                            let num=parseInt(inputElement.value);
+                            let txt;
+                            if(isNaN(num))
+                            {
+                                txt="Invalid input 🥲 ";
+                                
+
+                            }
+                            else if(num % 2 == 0)
+                            {
+                                txt="It is an Even number 😆";
+                            }
+                            else{
+                                txt="It is a Odd number 😎";
+                            }
+                            document.getElementById("numb").innerHTML=txt;
+                        }
+                    </script>
+                    <div>
+                        <p id="numb"></p>
+                    <button onclick="myFunc()" onmousedowns="style='background-color:#a0d2eb'" class="button-check">Check!</button>
+                    
+                    </div>
+                </div>
+                </div>
+              </div>  
+         </div>
+        </div>
+
+    </body>
+</html>
